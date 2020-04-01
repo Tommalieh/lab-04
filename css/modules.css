@@ -1,0 +1,84 @@
+/* for mobile view of screen widths (480px - 767px) */
+
+@media all and (min-width: 480px) {
+
+    .cdElements{
+        display: grid;
+        grid-area: cd;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+    }
+
+    .efghElements{
+        display: grid;
+        grid-area: efgh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .cdElements div{
+
+        background-color: #8b6e73;
+        color: #000;
+        text-align: center;
+        border-bottom: 0.5px solid #a7a7a7;
+        border-left: 0.5px solid #a7a7a7;
+        border-right: 0.5px solid #a7a7a7;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .efghElements div{
+
+        background-color: #85979e;
+        color: #000;
+        text-align: center;
+        border-bottom: 0.5px solid #a7a7a7;
+        border-left: 0.5px solid #a7a7a7;
+        border-right: 0.5px solid #a7a7a7;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .efghElements div:nth-child(2), .efghElements div:nth-child(4){
+        border-left: 0;
+    }
+    
+    
+}
+
+
+
+
+
+/* for Desktop view of screen widths of 768px and more */
+
+@media all and (min-width: 768px) {
+
+    
+    .cdElements div{
+
+        border-left: 0;
+        background-color: #a0ada1;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .efghElements div{
+
+        border-left: 0;
+        background-color: #c5b6b6;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}

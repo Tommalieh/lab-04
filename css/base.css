@@ -1,0 +1,172 @@
+/* for mobile view of screen widths (480px - 767px) */
+
+@media all and (min-width: 480px){
+
+    html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body{
+        width: 80%;
+        margin: 5vh 0;  
+        display: grid;
+        grid-template-columns: 100%;      
+        grid-template-rows: 7.11vh 85.29vh 7.6vh;
+        grid-template-areas: "a a"
+                            "z z"
+                            "i i"
+                            ;
+    }
+
+    main{
+        display: grid;
+        grid-area: z;
+        grid-template-columns: 100%;
+        grid-template-rows: 15.306% 25.51% 51.02% 8.163%;
+        grid-template-areas: "b"
+                            "cd"
+                            "efgh"
+                            "i"
+                            ;
+    }
+
+    header{
+        background-color: #c5b6b6;
+        color: #000;
+        border-color: black;
+        display: grid;
+        grid-area: a;
+        text-align: center;
+        align-items: center;
+    }
+
+    aside{
+        background-color: #c5c2b1;
+        color: #000;
+        border-color: black;
+        display: grid;
+        grid-area: b;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer{
+        background-color: #a0ada1;
+        color: #000;
+        border-color: black;
+        display: grid;
+        grid-area: i;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* for view of screen widths (631px - 766px) */
+
+@media all and (min-width: 631px) and (max-width: 766px){
+    html{
+        background-color: #eee;
+    }
+
+    header{
+        background-color: red;
+    }
+
+    footer{
+        background-color: blue;
+    }
+
+    aside{
+        background-color: rgba(255, 255, 0, 0.678);
+    }
+
+    .cdElements div:nth-child(1){
+        background-color: yellowgreen;
+    }
+
+    .cdElements div:nth-child(2){
+        background-color: green;
+    }
+
+    .efghElements div:nth-child(1){
+        background-color: pink;
+    }
+    .efghElements div:nth-child(2){
+        background-color: pink;
+    }
+    .efghElements div:nth-child(3){
+        background-color: magenta;
+    }
+    .efghElements div:nth-child(4){
+        background-color: magenta;
+    }
+}
+
+
+
+/* for Desktop view of screen widths of 768px and more */
+
+@media all and (min-width: 768px) {
+
+    html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body{
+
+        width: 80%;
+        margin: 5vh 0;  
+        display: grid;
+        grid-template-columns: 100%;      
+        grid-template-rows: 14.285vh 85.714vh;
+        grid-template-areas: "a"
+                            "z"
+                            ;
+    }
+    
+    main{
+        display: grid;
+        grid-area: z;
+        grid-template-columns: 20.833% 79.166%;
+        grid-template-rows: 33.33% 41.66% 25%;
+        grid-template-areas: "b cd"
+                            "b efgh"
+                            "b i"
+                            ;
+    }
+
+    header{
+        background-color: #85979e;
+        color: #000;
+        border-color: black;
+        display: grid;
+        grid-area: a;
+        text-align: center;
+        align-items: center;
+    }
+
+    aside{
+        background-color: #a898b3;
+        color: #000;
+        border-color: black;
+        display: grid;
+        grid-area: b;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer{
+        background-color: #8b6e73;
+        color: #000;
+        border-color: black;
+        display: grid;
+        grid-area: i;
+        text-align: center;
+        align-items: center;
+    }
+
+}
