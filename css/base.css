@@ -1,6 +1,6 @@
 /* for mobile view of screen widths (480px - 767px) */
 
-@media all and (min-width: 480px){
+@media all and (min-width: 1px){
 
     html{
         display: flex;
@@ -63,9 +63,9 @@
     }
 }
 
-/* for view of screen widths (631px - 766px) */
+/* for view of screen widths (631px - 767px) */
 
-@media all and (min-width: 631px) and (max-width: 766px){
+@media all and (min-width: 631px) and (max-width: 767px){
     html{
         background-color: #eee;
     }
