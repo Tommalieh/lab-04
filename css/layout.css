@@ -1,6 +1,6 @@
 /* for mobile view of screen widths (480px - 767px) */
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 1px) {
 
     header{
         text-align: center;
